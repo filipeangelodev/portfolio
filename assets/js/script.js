@@ -175,4 +175,5 @@ window.addEventListener('scroll', () => {
             item.classList.add('active');
         }
     });
+
 });
