@@ -1,0 +1,55 @@
+// Default
+
+// WPCF7
+.wpcf7-form{
+    label{
+        @extend .d-block;
+    }
+}
+
+.wpcf7-text, 
+.wpcf7-textarea,
+.wpcf7-number,
+.wpcf7-date,
+.wpcf7-file{
+    @extend .form-control;
+}
+
+.wpcf7-select{
+    @extend .form-select;
+}
+
+.wpcf7-range{
+    @extend .form-range;
+}
+
+.wpcf7-radio, 
+.wpcf7-checkbox, 
+.wpcf7-acceptance{
+
+    .wpcf7-list-item{
+        @extend .form-check, .ms-0;
+    }
+
+    input[type="radio"], input[type="checkbox"]{
+        @extend .form-check-input;
+    }
+
+    .wpcf7-list-item-label{
+        @extend .form-check-label;
+    }
+
+}
+
+.wpcf7-submit{
+    @extend .btn, .btn-primary;
+}
+
+.wpcf7-not-valid-tip{
+    font-size: $font-size-base * .75;
+}
+
+.wpcf7-response-output{
+    @extend .bg-white, .text-center;
+    font-size: $font-size-base * .85;
+}

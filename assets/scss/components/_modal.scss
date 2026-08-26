@@ -1,0 +1,11 @@
+.modal{
+    .modal-title{
+        font-size: $font-size-base * 1.25;
+    }
+    p{
+        @extend .fw-light;
+        strong{
+            @extend .fw-extrabold;
+        }
+    }
+}

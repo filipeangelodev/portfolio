@@ -1,0 +1,46 @@
+// Utilities
+$utilities: map-merge($utilities, (
+    "font-weight": (
+        property: font-weight,
+        class: fw,
+        values: (
+            thin: 100,
+            lighter: $font-weight-lighter,
+            extralight: 200,
+            light: $font-weight-light,
+            normal: $font-weight-normal,
+            medium: $font-weight-medium,
+            semibold: $font-weight-semibold,
+            bold: $font-weight-bold,
+            extrabold: 800,
+            bolder: $font-weight-bolder,
+            black: 900
+        )
+    ),
+    "opacity": (
+        property: opacity,
+        values: (
+            0: 0,
+            5: .05,
+            10: .1,
+            15: .15,
+            20: .2,
+            25: .25,
+            30: .3,
+            35: .35,
+            40: .4,
+            45: .45,
+            50: .5,
+            55: .55,
+            60: .6,
+            65: .65,
+            70: .7,
+            75: .75,
+            80: .8,
+            85: .85,
+            90: .9,
+            95: .95,
+            100: 1
+        )
+    ),
+));

@@ -1,0 +1,114 @@
+// Default
+.card{
+    transition: 0.3s;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    &:hover{
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-icon {
+        --card-icon-size: 48px;
+        --card-icon-border-radius: 8px;
+        width: var(--card-icon-size);
+        height: var(--card-icon-size);
+        border-radius: var(--card-icon-border-radius);
+        background: #f8fafc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+        color: #0f172a;
+        border: 1px solid #e2e8f0;
+    }
+
+}
+
+// Project
+.card-project{
+
+    --bs-card-spacer-y: 1.75rem;
+    --bs-card-spacer-x: 1.75rem;
+    --bs-card-cap-padding-y: 1.75rem;
+    --bs-card-cap-padding-x: 1.75rem;
+    overflow: hidden;
+
+    @extend .rounded-4;
+
+    .card-img-top{
+        position: relative;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .card-col-img{
+        position: relative;
+        min-height: 300px;
+        overflow: hidden;
+        
+        @include media-breakpoint-down( md ){
+            max-height: 320px;
+        }
+
+    }
+
+    .card-img{
+        @extend .rounded-0;
+        object-fit: cover;
+        object-position: top;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .card-title{
+        @extend .fw-extrabold;
+        font-size: 1.5rem;
+    }
+
+    .card-text{
+        @extend .fw-light;
+    }
+
+    .card-footer{
+        background-color: transparent;
+        border-top: 0;
+    }
+
+}
+
+// Service
+.card-service{
+
+    @extend .rounded-4;
+
+    .card-body{
+        --bs-card-spacer-y: 1.75rem;
+        --bs-card-spacer-x: 1.75rem;
+    }
+
+    .card-title{
+        @extend .fw-extrabold;
+        font-size: $font-size-base * 1.125;
+    }
+
+    .card-text{
+        font-size: $font-size-base * 0.875;
+    }
+
+}
+
+// Info
+.card-info{
+
+    @extend .text-center, .rounded-5;
+
+    .card-body{
+        --bs-card-spacer-y: 7rem;
+        --bs-card-spacer-x: 2rem;
+    }
+
+}

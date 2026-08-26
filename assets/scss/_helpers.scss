@@ -1,0 +1,70 @@
+// List
+.list-inline{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+// Social Icons
+ul.social-icons{
+    
+    @extend .list-inline;
+
+    li{
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px 8px;
+        a{
+            font-size: 1.5rem;
+            color: var(--bs-navbar-color);
+            &:hover{
+                color: var(--bs-navbar-hover-color);
+            }
+        }
+    }
+
+}
+
+// Iframe Responsive
+.iframe-responsive{
+    --iframe-height: 56.25%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: var(--iframe-height);
+    & > iframe, & > .iframe-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// Title
+.title-2{
+    @extend .fs-2, .text-primary-light, .fw-light;
+    strong{
+        @extend .text-primary, .fw-bold;
+    }
+}
+
+// Project Tag
+.project-tag{
+    @extend .badge, .border, .border-primary-light, .text-primary-light;
+}
+
+// Text Quote
+.text-quote{
+    border-left: 2px solid $primary-light;
+    padding-left: 1rem;
+    font-size: $font-size-base * 0.85;
+}
+
+// Text Legal
+.text-legal{
+    font-size: $font-size-base * 0.85;
+}

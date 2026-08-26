@@ -1,0 +1,22 @@
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: auto;
+    }
+}
+
+body{}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+p{
+    line-height: 1.5;
+    color: rgba(0,0,0, 0.65);
+}

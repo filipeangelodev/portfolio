@@ -1,0 +1,90 @@
+// Default
+
+// Dropdown Group
+.dropdown-list-group{
+    @extend .dropdown;
+}
+
+.dropup-list-group{
+    @extend .dropup;
+}
+
+.dropend-list-group{
+    @extend .dropend;
+}
+
+.dropstart-list-group{
+    @extend .dropstart;
+}
+
+.dropdown-list-group,
+.dropup-list-group{
+
+    .nav-link,
+    .dropdown-item{
+        padding-right: 1.5rem!important; // font-size-base
+    }
+
+    .dropdown-list-group-toggle{
+        right: 0;
+    }
+
+}
+
+.dropup-list-group,
+.dropend-list-group{
+    .dropdown-list-group-toggle{
+        &::after{
+            @include media-breakpoint-down( lg ){
+                vertical-align: 0.5rem;
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+            }
+        }
+    }
+}
+
+.dropdown-list-group-sub-menu{
+
+    @extend .dropdown-menu;
+
+    .dropup-list-group,
+    .dropend-list-group{
+
+        .dropdown-list-group-toggle{
+
+            @include media-breakpoint-down( lg ){
+                top: 0.3rem;
+            }
+
+            @include media-breakpoint-up( lg ){
+                top: 0.35rem;
+            }
+
+            &::after{
+                @include media-breakpoint-down( lg ){
+                    vertical-align: 0.35rem;
+                }
+                @include media-breakpoint-up( lg ){
+                    vertical-align: 0.25rem;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.dropdown-list-group-toggle{
+    @extend .dropdown-toggle;
+    position: absolute;
+    top: .5rem;
+    background: initial;
+    border: 0;
+    outline: 0;
+    width: 1.5rem; // font-size-base
+    height: 1.5rem; // font-size-base
+}

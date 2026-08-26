@@ -1,0 +1,54 @@
+.swiper-skills{
+
+    width: 100%;
+    overflow: hidden;
+
+    .skill-item{
+        --bg-color: #f5f5f5;
+        width: 150px;
+        height: 150px;
+        padding: 1rem;
+        border-radius: 50rem;
+        background-color: var(--bg-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper-wrapper{
+        -webkit-transition-timing-function:linear!important;
+        transition-timing-function:linear!important; 
+    }
+    
+    .swiper-slide {
+        width: auto;
+        flex-shrink: 0;
+        padding: 0 30px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    img {
+    height: 42px;
+    width: auto;
+    opacity: .7;
+    transition: .3s;
+}
+}
+
+.marquee-swiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee-swiper .swiper-wrapper {
+    -webkit-transition-timing-function:linear!important;
+    transition-timing-function:linear!important; 
+}
+
+.marquee-swiper .swiper-slide {
+    width: 827px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

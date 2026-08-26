@@ -1,0 +1,31 @@
+.wpcf7-form{
+    label{
+        @extend .d-block;
+    }
+}
+
+.wpcf7-form-control{
+    &:not(.wpcf7-submit){
+        @extend .form-control, .mt-1;
+        font-size: 1rem;
+        height: 46px;
+    }
+}
+
+.wpcf7-textarea{
+    @extend .w-100;
+}
+
+.wpcf7-submit{
+    @extend .btn, .btn-secondary, .float-end;
+    padding: 0.75rem 1.5rem!important;
+}
+
+.wpcf7-not-valid-tip{
+    @extend .text-end;
+    font-size: 0.75rem;
+}
+
+.wpcf7-response-output{
+    @extend .bg-white, .text-center, .text-black;
+}
