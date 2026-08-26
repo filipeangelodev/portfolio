@@ -11458,6 +11458,10 @@ button.swiper-pagination-bullet {
     scroll-behavior: auto;
   }
 }
+body {
+  padding-top: 56px;
+}
+
 img {
   max-width: 100%;
   height: auto;
