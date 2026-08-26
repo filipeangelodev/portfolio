@@ -11527,7 +11527,7 @@ ul.social-icons li a:hover {
 }
 .reveal.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .card {
