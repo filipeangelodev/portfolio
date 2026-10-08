@@ -157,7 +157,8 @@ revealElements.forEach(element => {
 
 // Dynamic Nav Link Highlighting based on Section Visibility
 const sections = document.querySelectorAll('section');
-const navItems = document.querySelectorAll('.nav-link'); // .nav-item
+const navItems = document.querySelectorAll('.scroll-to'); // .nav-item
+const offcanvasElement = document.getElementById('offcanvasNavbar');
 
 window.addEventListener('scroll', () => {
     let current = '';
@@ -166,6 +167,13 @@ window.addEventListener('scroll', () => {
         const sectionHeight = section.clientHeight;
         if (pageYOffset >= (sectionTop - 150)) {
             current = section.getAttribute('id');
+
+            const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+
+            if (offcanvas && window.innerWidth < 992) {
+                offcanvas.hide();
+            }
+
         }
     });
 
